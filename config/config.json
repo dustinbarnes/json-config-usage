@@ -1,0 +1,22 @@
+{
+	"dev": {
+		"db": {
+			"host": "dbhost-dev.mycompany.com"
+		},
+		"context": "context-dev"
+	},
+	"stage": {
+		"db": {
+			"host": "dbhost-stage.mycompany.com"
+		},
+		"context": "context-stage"
+	},
+	"default": {
+		"db": {
+			"driver": "com.mysql.MysqlJdbcDriver",
+			"username": "dbuser",
+			"password": "FROM_SECRETS_FILE"
+		}
+	},
+	"hello": "world"
+}
