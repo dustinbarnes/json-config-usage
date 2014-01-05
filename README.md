@@ -68,3 +68,28 @@ The way we accomplish this is through "lifting". We take a block and promote it 
         "login": "username"
     }
     
+Testing
+-------
+To test this, just open up your console and run ```make```. You need to have maven and node installed, and ideally running bash on osx :). If everything is great, you'll get this: 
+
+    $ make
+    Running node...
+    Running java-with-spring...
+    Running java-without-spring
+    
+    Files are identical :)
+    
+    $
+    
+But if there is something hokey about it, you'll get this: 
+
+    $ make
+    Running node...
+    Running java-with-spring...
+    Running java-without-spring
+    
+    Files are different :(
+    
+    $
+    
+Feel free to look at the files in the ```target``` directory to see the differences. 
