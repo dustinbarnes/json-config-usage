@@ -22,6 +22,7 @@ public class App
         }
 
         printJson(config);
+        printProperties(config);
     }
 
     private void printJson(Config resolvedConfig)
@@ -30,6 +31,14 @@ public class App
 
         String finalValue = intermediate.replaceAll("\"_ref ([^\"]+)\"", "\\${$1}");
         System.out.println(finalValue);
-
     }
+
+    private void printProperties(Config resolvedConfig)
+    {
+        for ( Map.Entry<String, ConfigValue> e : resolvedConfig.root().entrySet() )
+        {
+            System.out.println(e.getKey() + "=" + e.getValue().render());
+        }
+    }
+
 }
