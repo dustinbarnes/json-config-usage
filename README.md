@@ -1,6 +1,8 @@
 json-config
 ===========
 
+**UPDATE: See the updated config compiler using Gradle at my employer's website: https://github.com/dev9com/json-config**
+
 This project is a proof-of-concept showing a json-based configuration that can be used in node.js, as well as java. In the java world, we have two examples: one with Spring Framework, and one without. 
 
 This means that every node and java project can share the same configuration!

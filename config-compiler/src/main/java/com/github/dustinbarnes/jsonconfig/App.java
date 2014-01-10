@@ -15,7 +15,6 @@ public class App
     public void dumpConfig()
     {
         Config config = ConfigFactory.parseResources(this.getClass(), "/main.conf").resolve();
-
         for ( String key : REMOVE_KEYS )
         {
             config = config.withoutPath(key);
